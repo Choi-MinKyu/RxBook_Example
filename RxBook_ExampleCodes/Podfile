@@ -4,15 +4,16 @@
 target 'RxBook_ExampleCodes' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for RxBook_ExampleCodes
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
 
   target 'RxBook_ExampleCodesTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'RxSwift'
-    pod 'RxCocoa'
-    pod 'RxDataSources'
+  
   end
 
   target 'RxBook_ExampleCodesUITests' do

@@ -59,6 +59,7 @@
 		950F530A28D4AFD10040687B /* RxBook_ExampleCodesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxBook_ExampleCodesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		950F530E28D4AFD10040687B /* RxBook_ExampleCodesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBook_ExampleCodesUITests.swift; sourceTree = "<group>"; };
 		950F531028D4AFD10040687B /* RxBook_ExampleCodesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBook_ExampleCodesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		95A68FED28D4B7BC005E72CE /* Just_Of_From.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Just_Of_From.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A2E3DAB88D0365A33DC5B269 /* Pods_RxBook_ExampleCodes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxBook_ExampleCodes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6179F877D73CDA6C3EE154E /* Pods-RxBook_ExampleCodes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBook_ExampleCodes.release.xcconfig"; path = "Target Support Files/Pods-RxBook_ExampleCodes/Pods-RxBook_ExampleCodes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +102,6 @@
 				397B6236C50FF27418E0B79A /* Pods-RxBook_ExampleCodesTests.debug.xcconfig */,
 				19C2A91BF5C16A55AD550D1C /* Pods-RxBook_ExampleCodesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +140,7 @@
 		950F52EC28D4AFC80040687B /* RxBook_ExampleCodes */ = {
 			isa = PBXGroup;
 			children = (
+				95A68FEA28D4B661005E72CE /* 3.Create Observable Operators */,
 				950F52ED28D4AFC80040687B /* AppDelegate.swift */,
 				950F52EF28D4AFC80040687B /* SceneDelegate.swift */,
 				950F52F128D4AFC80040687B /* ViewController.swift */,
@@ -168,6 +169,14 @@
 			path = RxBook_ExampleCodesUITests;
 			sourceTree = "<group>";
 		};
+		95A68FEA28D4B661005E72CE /* 3.Create Observable Operators */ = {
+			isa = PBXGroup;
+			children = (
+				95A68FED28D4B7BC005E72CE /* Just_Of_From.playground */,
+			);
+			path = "3.Create Observable Operators";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,6 +188,7 @@
 				950F52E628D4AFC80040687B /* Sources */,
 				950F52E728D4AFC80040687B /* Frameworks */,
 				950F52E828D4AFC80040687B /* Resources */,
+				31FBA65AB9C0030FABD0573C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,7 +207,6 @@
 				950F52FC28D4AFD10040687B /* Sources */,
 				950F52FD28D4AFD10040687B /* Frameworks */,
 				950F52FE28D4AFD10040687B /* Resources */,
-				83AD5733A5E12E91D2ECDC6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +226,7 @@
 				950F530628D4AFD10040687B /* Sources */,
 				950F530728D4AFD10040687B /* Frameworks */,
 				950F530828D4AFD10040687B /* Resources */,
+				1E5FCBF8F7D2FBB4771B3BF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,21 +309,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		83AD5733A5E12E91D2ECDC6F /* [CP] Embed Pods Frameworks */ = {
+		1E5FCBF8F7D2FBB4771B3BF1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxBook_ExampleCodesTests/Pods-RxBook_ExampleCodesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RxBook_ExampleCodes-RxBook_ExampleCodesUITests/Pods-RxBook_ExampleCodes-RxBook_ExampleCodesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxBook_ExampleCodesTests/Pods-RxBook_ExampleCodesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RxBook_ExampleCodes-RxBook_ExampleCodesUITests/Pods-RxBook_ExampleCodes-RxBook_ExampleCodesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxBook_ExampleCodesTests/Pods-RxBook_ExampleCodesTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxBook_ExampleCodes-RxBook_ExampleCodesUITests/Pods-RxBook_ExampleCodes-RxBook_ExampleCodesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31FBA65AB9C0030FABD0573C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxBook_ExampleCodes/Pods-RxBook_ExampleCodes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxBook_ExampleCodes/Pods-RxBook_ExampleCodes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxBook_ExampleCodes/Pods-RxBook_ExampleCodes-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9C903817F0A04B8762B13296 /* [CP] Check Pods Manifest.lock */ = {
